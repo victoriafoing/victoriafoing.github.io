@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Victoria Foing</title>
+    <link href="new_style.css" style="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <header>victoria foing</header>
+  <body>
+    <div class="box">
+      <div id='buttons' class="left">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <div id="profile" class="profile unclicked">
+          <div id="profile_title" class="title unclicked button">PROFILE</div>
+        </div>
+        <div id="edu" class="edu dropdown">
+          <div id="edu_title" class="edu title unclicked dropdown">EDUCATION</div>
+          <div id="edu_extra" class="extra hidden">
+            <div id="ai" class="edu section-link unclicked button">MSc Artificial Intelligence</div>
+            <div id="cs" class="edu section-link unclicked button">Bachelor Computer Science</div>
+          </div>
+        </div>
+        <div id="work" class="work dropdown">
+          <div id="work_title" class="work title unclicked dropdown">WORK</div>
+          <span id="work_extra" class="extra hidden">
+            <div id="loris" class="work section-link unclicked button test">Software Developer</div>
+            <div id="nuance" class="work section-link unclicked button">Software Developer Intern</div>
+            <div id="esa" class="work section-link unclicked button">Data Analytics Intern</div>
+          </span>
+        </div>
+        <div id="proj" class="proj dropdown">
+          <div id="proj_title" class="proj title unclicked dropdown">PROJECTS</div>
+          <span id="proj_extra" class="extra hidden">
+            <img id="scoli" class="proj section-link unclicked button" src="new_images/scoliosis.png" alt="">
+            <img id="food" class="proj section-link unclicked button" src="new_images/food_waste.png" alt="">
+            <img id="robot" class="proj section-link unclicked button" src="new_images/robot_icon.png" alt="">
+            <img id="gis" class="proj section-link unclicked button" src="new_images/gislogo.png" alt="">
+            <img id="arch" class="proj section-link unclicked button" src="new_images/arch.png" alt="">
+          </span>
+        </div>
+        <div id="pub" class="pub unclicked">
+          <div id="pub_title" class="title unclicked button">PAPERS</div>
+        </div>
+      </div>
+      <div class="right">
+        <div id="info">
+          <div id="clicked_title"></div>
+          <div id="clicked_text"></div>
+          <div id="clicked_media"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+<script src="js/script.js"></script>
+</html>

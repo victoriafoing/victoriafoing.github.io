@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///Users/victoriafoing/victoriafoing.github.io/portfolio.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Victoria Foing</title>
+    <link href="./Victoria Foing_files/style.css" style="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="mydiv">
+    <div class="bg"></div>
+    <header>
+      <div class="logo">
+        <span>
+          victoria foing
+        </span>
+      </div>
+      <div class="links">
+        <a href="file:///Users/victoriafoing/victoriafoing.github.io/index.html">about</a>
+        <a href="file:///Users/victoriafoing/victoriafoing.github.io/cv.html">cv</a>
+        <a href="file:///Users/victoriafoing/victoriafoing.github.io/portfolio.html" style="color:white">portfolio</a>
+      </div>
+    </header>
+    <div class="portfolio">
+      <h1>data science</h1>
+      <div class="data category">
+        <!-- Open modal -->
+        <div class="title-and-project">
+          <p>data analytics at the esa</p>
+          <div class="myBtn esa project" data-modal="modal-esa">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-esa" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">×</span>
+              <h1>data analytics at the european space agency</h1>
+              <p>At the European Space Agency, I gave the Agency feedback on which space missions and countries produced the highest number of scientific papers and why.
+              <br><br>I was given data on the number of annual publications for ten space missions and the number of annual publications by seven countries for three of those missions. I then researched the missions in-depth, gathering information on their launch dates, lifespans, objectives, instruments, and the countries involved.</p>
+              <img src="./Victoria Foing_files/experimenting.png">
+              <p>I imported the data into the analytics software Microstrategy and played with data visualizations on a dashboard. By experimenting with heat maps, bubble grids, line graphs, bar graphs, and pie graphs, I learned which visualizations were best suited to represent the data and set out to design a layout for my final two documents.</p>
+              <img src="./Victoria Foing_files/design.png">
+              <p>The first document is titled “Publications for ESA missions” and visualises the publications for ten missions (Gaia, Herschel, INTEGRAL, ISO, Mars Express, Planck, Rosetta, SOHO, Venus Express, and XMM-Newton) over the last 15 years. This document enables the user to look at the data for any combination of missions over time (line graphs) as well as the data for all missions each individual year (bar graphs).</p>
+              <img src="./Victoria Foing_files/document1.png">
+              <p>The second document is titled “Publications by Country for ESA Missions“ and visualises the publications by seven countries (Austria, Belgium, France, Germany, Italy, the Netherlands, Spain, and the United Kingdom) for three missions (Herschel, INTEGRAL, and XMM-Newton) over the last 15 years. On this document, the user can look at the data for any individual country over time (line graphs), the data for all countries each individual year (pie graphs), and the data for any combination of missions over time and by year.</p>
+              <img src="./Victoria Foing_files/document2.png">
+              <p>With the help of these interactive documents, I could study the long-term and the annual impact of each mission, and also compare the impacts of various groups of missions (e.g. old vs. new missions, planetary science missions, missions launched together). My analytical approach was to break down each long-term impact and compare trends surrounding the launch date, the year the first publications appeared, the year the publications peaked, the magnitude of the peak, and the direction of the publications post-peak.</p>
+              <img src="./Victoria Foing_files/results1.png">
+              <img src="./Victoria Foing_files/results2.png">
+              <p>As a result, I was able to obtain useful information from these interactive visualizations and discover trends across the impacts. I observed that there were young peaking missions (Gaia, Herschel, and Planck), middle-aged stabilising missions (Mars Express, Rosetta, and Venus Express), and old declining missions (SOHO, ISO), as well as some outliers (XMM-Newton, INTEGRAL). I conclude that Microstrategy is a valuable tool for comparison and analysis and can be effectively used to explore trends in mission publications. You can learn more about the project in the report below.</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="./Victoria Foing_files/data-visualizations-european-space-agency.pdf"></object>
+              <p></p>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+
+        <div class="title-and-project">
+          <p>smart traffic at mission hacks</p>
+          <div class="myBtn traffic project" data-modal="modal-traffic"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-traffic" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">×</span>
+              <h1>smart traffic project</h1>
+                <p>I attended the hackathon Mission Hacks in April 2018, hosted by Randstadt and Intact. The objective was to design solutions for infrastructure, education, health, and economy on an earth-like planet. Our team, Team SmartCity, was made up of members with backgrounds in urban geography, systems engineering, computer science, and data science. Our mission was to use design and technology to tackle urban problems in innovative ways.
+                <br><br>The urban problem that we addressed was traffic congestion. Traffic has negative consequences for the individual, the community, and the environment: it inconveniences the individual (stress, road rage, loss of productivity), slows down emergency vehicles (police cars, ambulances, firetrucks), and increases pollution.
+                <br><br>We developed a web application called "Smart Traffic" for the phone and desktop computer. Smart Traffic allows users to input a region in New South Wales and receive live traffic information about motorways in that region. The application returns a live image for each motorway with a prediction about the level of traffic congestion (low, medium, high) based on an image-recognition algorithm.</p>
+                <img src="./Victoria Foing_files/smart-traffic1.png">
+                <p>How it works: When the user inputs a region, live traffic images are obtained from <a href="https://www.livetraffic.com/" style="text-decoration:underline; padding: 0px 0px;">Live Traffic NSW</a>, where they are updated every 60 seconds. A python script applies the image recognition machine learning algorithm to each image, predicting a congestion level between 0 and 1. The results are channelled into the web application.</p>
+                <img src="./Victoria Foing_files/smart-traffic3.png">
+                <p>The project is not available online yet. Below is a screenshot of a demo. After the user chooses the region Sydney South, the application returns a feed of images with the following information:
+                <br><br>Title: 5 Ways (Miranda)
+                <br>View: 5 Ways The Boulevarde looking west towards Sutherland
+                <br>Predict: low congestion (score = 0.98741).
+                <br>Direction: W
+                </p>
+                <img src="./Victoria Foing_files/smart-traffic2.png">
+                <p>Since the hackathon, we have formed a growing community of smart city enthusiasts exploring open data to solve urban problems.</p>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+        </div>
+
+        <h1>gis</h1>
+        <div class="gis category">
+
+          <div class="title-and-project">
+            <p>gis and urban agriculture</p>
+            <div class="myBtn gis project" data-modal="modal-gis"></div>
+          </div>
+
+          <!-- Modal -->
+          <div id="modal-gis" class="modal">
+          <!-- Modal content -->
+            <div class="modal-content">
+              <div class="project-description">
+                <span class="close">×</span>
+                <h1>gis and urban agriculture</h1>
+                <p>The objective of this semester-long project was to use GIS to find a suitable plot of land for a community garden in Montreal. I defined suitability in terms of land availability, distance from contamination, access by community, and proximity to target group. Below you can find my presentation and final report.
+                </p>
+                <object width="600" height="500" style="border: 2px solid black;" data="./Victoria Foing_files/gis-ua-presentation.pdf"></object>
+                <br>
+                <br>
+                <object width="600" height="750" style="border: 2px solid black;" data="./Victoria Foing_files/gis-urban-agriculture.pdf"></object>
+                <p></p>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+
+          <div class="title-and-project">
+            <p>socio-economic applications of gis</p>
+            <div class="myBtn labs project" data-modal="modal-labs"></div>
+          </div>
+
+          <!-- Modal -->
+          <div id="modal-labs" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="project-description">
+                <span class="close">×</span>
+                <h1>gis labs</h1>
+                <p>In the Geographic Information Centre at McGill University, I completed various labs on the socioeconomic applications of GIS. The GIS techniques I explored were:
+                <br><br>
+                Buffers:
+                <br>
+                Using wetland, road, and county boundary data to figure out which wetlands in the National Wetlands Inventory fall within and outside of a 1 kilometer buffer of all roads in county Randolph, Illinois.
+                <br><br>
+                Geodemographics:
+                <br>
+                Finding the ideal location of a high-end audio store, Paradigm, in the Plateau neighborhood of Montreal based on a demographic data in census tracts, target market characteristics (male, aged 30-44, annual income &gt; 35K), and distance from competition.
+                <br><br>
+                Shortest-path analysis:
+                <br>
+                Determining the shortest route for a walking tour of Old Montreal, starting and ending at Roddick Gates (McGill University) and including 12 tourist stops.
+                <br><br>
+                Location-Allocation:
+                <br>
+                Checking the evenness of CLSCs (free health clinics) in downtown Montreal. I determined which five of seven clinics could be closed to cut costs with minimal impacts on accessibility and then tested if a new clinic could be built at a better location.
+                <br><br>
+                3-D Modelling:
+                <br>
+                Geo-referencing an airphoto and building footprints of McGill Campus with street network data, creating a base map of the building footprint with building height values, and using interpolation to transform the 2D surface into a 3D model.
+                </p>
+                <object width="600" height="750" style="border: 2px solid black;" data="./Victoria Foing_files/gis-labs.pdf"></object>
+                <p></p>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+        </div>
+
+        <h1>computer science</h1>
+        <div class="cs category">
+          <div class="title-and-project">
+            <p>recycling robot</p>
+            <div class="myBtn robo project" data-modal="modal-robo"></div>
+          </div>
+          <!-- Modal -->
+          <div id="modal-robo" class="modal" style="display: block;">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="recycle project-description">
+                <span class="close">×</span>
+                <h1>mcgill robotics</h1>
+                <p>robot prototype for mini projects competition</p>
+                <img src="./Victoria Foing_files/design1.jpg">
+                <img src="./Victoria Foing_files/design2.jpg">
+                <img src="./Victoria Foing_files/design3.jpg">
+                <img src="./Victoria Foing_files/build1.jpg">
+                <img src="./Victoria Foing_files/build2.jpg">
+                <img src="./Victoria Foing_files/build3.jpg">
+                <p></p>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+        </div>
+
+        <h1>urban systems</h1>
+        <div class="urban category">
+        <div class="title-and-project">
+          <p>essay on the smart city songdo</p>
+          <div class="myBtn songdo project" data-modal="modal-songdo"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-songdo" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">×</span>
+              <h1>smart city songdo</h1>
+              <p>Essay on the smart city Songdo</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="./Victoria Foing_files/smart-city-songdo.pdf"></object>
+              <p></p>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+
+        <div class="title-and-project">
+          <p>mobile applications for urban agriculture</p>
+          <div class="myBtn mobile project" data-modal="modal-mobile"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-mobile" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">×</span>
+              <h1>mobile phones and urban agriculture</h1>
+              <p>Research paper on using mobile applications to promote urban agriculture in developed and developing areas.</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="./Victoria Foing_files/mobile-phones-and-urban-agriculture.pdf"></object>
+              <p></p>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+        </div>
+
+        <h1>graphic design</h1>
+        <div class="graphic category">
+
+        <div class="title-and-project">
+          <p>cultural landscape study on 820Plaza</p>
+          <div class="myBtn plaza project" data-modal="modal-plaza"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-plaza" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">×</span>
+              <h1>820plaza</h1>
+              <p>This is a cultural landscape study on a space in Montreal that I undertook for an architecture seminar. I chose to examine a multi-purpose space in Mile-Ex called 820Plaza, an old concrete garage that was turned into a cultural centre for art, music, and selling records and books. The booklet was made using Photoshop and consists of field descriptions, sketches, photographs, and information from interviews and articles. To capture the space from my perspective, I visited the site and neighborhood and included some of my own photographs and digital illustrations. </p>
+              <br>
+              <br>
+              <object width="600" height="750" style="border: 2px solid black;" data="./Victoria Foing_files/820plaza.pdf"></object>
+              <p></p>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+
+        <div class="title-and-project">
+          <p>adobe illustrations</p>
+          <div class="myBtn adobe project" data-modal="modal-adobe"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-adobe" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">×</span>
+              <h1>adobe illustrations and animations</h1>
+              <!-- <p>description</p> -->
+              <img src="./Victoria Foing_files/sara.jpg">
+              <br>
+              <br>
+              <img src="./Victoria Foing_files/friends.png">
+              <img src="./Victoria Foing_files/house.png">
+              <img src="./Victoria Foing_files/door.png">
+              <img src="./Victoria Foing_files/houses.jpg">
+              <img src="./Victoria Foing_files/street.jpg">
+              <img src="./Victoria Foing_files/brain.gif">
+              <img src="./Victoria Foing_files/centerfold.gif">
+              <p></p>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="contact-info">
+        <a>copyright © 2018. all rights reserved.</a>
+        <a href="https://www.linkedin.com/in/victoria-foing-835662116/">linkedin</a>
+        <a>contact: victoria.foing@mail.mcgill.ca</a>
+      </div>
+    </footer>
+    </div>
+    <script>
+    // Get the modal
+    var modal;
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    for (var i = 0; i < btn.length; i++) {
+      var thisBtn = btn[i];
+      thisBtn.addEventListener("click", function(){
+        modal = document.getElementById(this.dataset.modal);
+        modal.style.display = "block";
+        }, false);
+
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    for (var i = 0; i < span.length; i++) {
+      span[i].onclick = function() {
+      modal.style.display = "none";
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    </script>
+  
+
+</body></html>

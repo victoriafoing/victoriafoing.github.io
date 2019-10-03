@@ -1,0 +1,132 @@
+@font-face {
+  font-family: AUTHENTIC-Sans;
+  src:
+  url("resources/css/fonts/AUTHENTIC-Sans.woff") format("woff"),
+  url("resources/css/fonts/AUTHENTIC-Sans.otf") format("opentype");
+}
+
+body {
+  font-family: AUTHENTIC-Sans;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+header {
+  font-size: 75px;
+  background-color: red;
+  text-align: center;
+}
+
+.button {
+  font-size: 40px;
+}
+
+.container2{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: 2px solid pink;
+  top: -1;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  background-position: bottom;
+  /*filter: grayscale(100%);*/
+  opacity: 0.1;
+}
+
+.container1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: 2px solid orange;
+  top: 0;
+  position: absolute;
+}
+
+.text {
+  border: 1px solid brown;
+  font-size: 25px;
+  text-align: left;
+  width: 50%;
+}
+
+.text .title {
+  opacity: 0.7;
+}
+.text .title:hover {
+  opacity: 1;
+  text-shadow: 0 0 32px black;
+}
+
+.info {
+  border: 2px solid blue;
+  width: 50%;
+  height: 100%;
+}
+
+.info_blank {
+  border: 2px solid purple;
+  height: 10%;
+}
+
+.info_text {
+  border: 2px solid grey;
+  height: 90%;
+  margin: 0px 50px 0 0;
+}
+
+.box {
+  /*border: 2px solid white;*/
+  margin: 0 0 0 0;
+}
+
+.title {
+  /*border: 2px solid white;*/
+  font-size: 75px;
+  margin: 0 0 0 0;
+}
+
+.section-link {
+  opacity: 0.5;
+}
+
+.section-link:hover {
+  opacity: 1;
+}
+
+.extra {
+    border: 2px solid green;
+    margin: 10px 0 10px 0;
+    display: none;
+}
+
+.box:hover .extra {
+    border: 2px solid red;
+    display: inline-block;
+}
+
+#clicked_media {
+  height: 375px;
+  width: 450px;
+  bottom: 0;
+  position: absolute;
+  background-size: cover;
+}
+
+
+.description {
+  visibility: hidden;
+  border: 2px solid orange;
+}
+
+/* This is only here to make the images visible since they don't
+   actually have valid src paths right now. */
+.proj .section-link {
+  display:inline-block;
+  width:60px;
+  height:60px;
+  filter: grayscale(100%);
+  /*border:1px solid black;*/
+}
+}

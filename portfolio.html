@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Victoria Foing</title>
+    <link href="./resources/css/style.css" style="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="mydiv">
+    <div class="bg"></div>
+    <header>
+      <div class="logo">
+        <span>
+          victoria foing
+        </span>
+      </div>
+      <div class="links">
+        <a href="index.html">about</a>
+        <a href="cv.html">cv</a>
+        <a href="portfolio.html" style="color:white">portfolio</a>
+      </div>
+    </header>
+    <div class="portfolio">
+
+      <h1>artificial intelligence</h1>
+      <div class="ai category">
+
+      <!-- Open modal -->
+      <div class="title-and-project">
+        <p>ai for social good</p>
+        <div class="myBtn freshest project" data-modal="modal-freshest">
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="modal-freshest" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="project-description">
+            <span class="close">&times;</span>
+            <h1>application to reduce food waste</h1>
+            <p>Second Place at the AI for Social Good Hackathon at Desjardins Lab.
+            <br><br>
+            An augmented reality application that uses computer vision to detect food products. Users can use this application to scan food items in their fridge and receive product-specific information about shelf life, storage, food preparation, and expiration warnings.
+            <br><br>
+            <a href="https://devpost.com/software/freshest-ai"><u>Link to project</u></a>
+            </p>
+            <video width="600" height="500" controls>
+              <source src="resources/css/images/portfolio/freshest/demo.mov">
+                  Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="footerspace"></div>
+        </div>
+      </div>
+
+      <div class="title-and-project">
+        <p>smart traffic at mission hacks</p>
+        <div class="myBtn traffic project" data-modal="modal-traffic"></div>
+      </div>
+      <!-- Modal -->
+      <div id="modal-traffic" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="project-description">
+            <span class="close">&times;</span>
+            <h1>smart traffic project</h1>
+              <p>I attended the hackathon Mission Hacks in April 2018, hosted by Randstadt and Intact. The objective was to design solutions for infrastructure, education, health, and economy on an earth-like planet. Our team, Team SmartCity, was made up of members with backgrounds in urban geography, systems engineering, computer science, and data science. Our mission was to use design and technology to tackle urban problems in innovative ways.
+              <br><br>The urban problem that we addressed was traffic congestion. Traffic has negative consequences for the individual, the community, and the environment: it inconveniences the individual (stress, road rage, loss of productivity), slows down emergency vehicles (police cars, ambulances, firetrucks), and increases pollution.
+              <br><br>We developed a web application called "Smart Traffic" for the phone and desktop computer. Smart Traffic allows users to input a region in New South Wales and receive live traffic information about motorways in that region. The application returns a live image for each motorway with a prediction about the level of traffic congestion (low, medium, high) based on an image-recognition algorithm.</p>
+              <img src="resources/css/images/portfolio/traffic/smart-traffic1.png">
+              <p>How it works: When the user inputs a region, live traffic images are obtained from <a href="https://www.livetraffic.com/" style="text-decoration:underline; padding: 0px 0px;">Live Traffic NSW</a>, where they are updated every 60 seconds. A python script applies the image recognition machine learning algorithm to each image, predicting a congestion level between 0 and 1. The results are channelled into the web application.</p>
+              <img src="resources/css/images/portfolio/traffic/smart-traffic3.png">
+              <p>The project is not available online yet. Below is a screenshot of a demo. After the user chooses the region Sydney South, the application returns a feed of images with the following information:
+              <br><br>Title: 5 Ways (Miranda)
+              <br>View: 5 Ways The Boulevarde looking west towards Sutherland
+              <br>Predict: low congestion (score = 0.98741).
+              <br>Direction: W
+              </p>
+              <img src="resources/css/images/portfolio/traffic/smart-traffic2.png">
+              <p>Since the hackathon, we have formed a growing community of smart city enthusiasts exploring open data to solve urban problems.</p>
+          </div>
+          <div class="footerspace"></div>
+        </div>
+      </div>
+    </div>
+
+      <h1>big data</h1>
+      <div class="data category">
+
+        <!-- Open modal -->
+        <div class="title-and-project">
+          <p>data analytics at the esa</p>
+          <div class="myBtn esa project" data-modal="modal-esa">
+          </div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-esa" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">&times;</span>
+              <h1>data analytics at the european space agency</h1>
+              <p>At the European Space Agency, I gave the Agency feedback on which space missions and countries produced the highest number of scientific papers and why.
+              <br><br>I was given data on the number of annual publications for ten space missions and the number of annual publications by seven countries for three of those missions. I then researched the missions in-depth, gathering information on their launch dates, lifespans, objectives, instruments, and the countries involved.</p>
+              <img src="resources/css/images/portfolio/esa/experimenting.png">
+              <p>I imported the data into the analytics software Microstrategy and played with data visualizations on a dashboard. By experimenting with heat maps, bubble grids, line graphs, bar graphs, and pie graphs, I learned which visualizations were best suited to represent the data and set out to design a layout for my final two documents.</p>
+              <img src="resources/css/images/portfolio/esa/design.png">
+              <p>The first document is titled “Publications for ESA missions” and visualises the publications for ten missions (Gaia, Herschel, INTEGRAL, ISO, Mars Express, Planck, Rosetta, SOHO, Venus Express, and XMM-Newton) over the last 15 years. This document enables the user to look at the data for any combination of missions over time (line graphs) as well as the data for all missions each individual year (bar graphs).</p>
+              <img src="resources/css/images/portfolio/esa/document1.png">
+              <p>The second document is titled “Publications by Country for ESA Missions“ and visualises the publications by seven countries (Austria, Belgium, France, Germany, Italy, the Netherlands, Spain, and the United Kingdom) for three missions (Herschel, INTEGRAL, and XMM-Newton) over the last 15 years. On this document, the user can look at the data for any individual country over time (line graphs), the data for all countries each individual year (pie graphs), and the data for any combination of missions over time and by year.</p>
+              <img src="resources/css/images/portfolio/esa/document2.png">
+              <p>With the help of these interactive documents, I could study the long-term and the annual impact of each mission, and also compare the impacts of various groups of missions (e.g. old vs. new missions, planetary science missions, missions launched together). My analytical approach was to break down each long-term impact and compare trends surrounding the launch date, the year the first publications appeared, the year the publications peaked, the magnitude of the peak, and the direction of the publications post-peak.</p>
+              <img src="resources/css/images/portfolio/esa/results1.png">
+              <img src="resources/css/images/portfolio/esa/results2.png">
+              <p>As a result, I was able to obtain useful information from these interactive visualizations and discover trends across the impacts. I observed that there were young peaking missions (Gaia, Herschel, and Planck), middle-aged stabilising missions (Mars Express, Rosetta, and Venus Express), and old declining missions (SOHO, ISO), as well as some outliers (XMM-Newton, INTEGRAL). I conclude that Microstrategy is a valuable tool for comparison and analysis and can be effectively used to explore trends in mission publications. You can learn more about the project in the report below.</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="resources/css/images/portfolio/esa/data-visualizations-european-space-agency.pdf"></object>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+
+        <div class="title-and-project">
+          <p>neuroscience data platform</p>
+          <div class="myBtn loris project" data-modal="modal-loris"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-loris" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">&times;</span>
+              <h1>neuroscience data platform</h1>
+                <p>LORIS (Longitudinal Online Research and Imaging System) is an open source framework for storing and processing behavioral, clinical, neuroimaging and genetic data. My role is to contribute to the design, coding, maintenance of this web-based management software and make it suitable for large datasets from longitudinal and multi-site studies.</p>
+                <br><br>
+                <a href="http://loris.ca/"><u>Link to LORIS</u></a>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+        </div>
+
+        <h1>gis</h1>
+        <div class="gis category">
+
+          <div class="title-and-project">
+            <p>gis and urban agriculture</p>
+            <div class="myBtn gis project" data-modal="modal-gis"></div>
+          </div>
+
+          <!-- Modal -->
+          <div id="modal-gis" class="modal">
+          <!-- Modal content -->
+            <div class="modal-content">
+              <div class="project-description">
+                <span class="close">&times;</span>
+                <h1>gis and urban agriculture</h2>
+                <p>The objective of this semester-long project was to use GIS to find a suitable plot of land for a community garden in Montreal. I defined suitability in terms of land availability, distance from contamination, access by community, and proximity to target group. Below you can find my presentation and final report.
+                </p>
+                <object width="600" height="500" style="border: 2px solid black;" data="resources/css/images/portfolio/gis/gis-ua-presentation.pdf"></object>
+                <object width="600" height="750" style="border: 2px solid black;" data="resources/css/images/portfolio/gis/gis-urban-agriculture.pdf"></object>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+
+          <div class="title-and-project">
+            <p>socio-economic applications of gis</p>
+            <div class="myBtn labs project" data-modal="modal-labs"></div>
+          </div>
+
+          <!-- Modal -->
+          <div id="modal-labs" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="project-description">
+                <span class="close">&times;</span>
+                <h1>gis labs</h1>
+                <p>In the Geographic Information Centre at McGill University, I completed various labs on the socioeconomic applications of GIS. The GIS techniques I explored were:
+                <h3>Buffers:</h3>
+                <p>Using wetland, road, and county boundary data to figure out which wetlands in the National Wetlands Inventory fall within and outside of a 1 kilometer buffer of all roads in county Randolph, Illinois.</p>
+                <h3>Geodemographics:</h3>
+                <p>Finding the ideal location of a high-end audio store, Paradigm, in the Plateau neighborhood of Montreal based on target market characteristics (male, aged 30-44, annual income > 35K), demographic data in census tracts, and distance from competition.</p>
+                <h3>Shortest-path analysis:</h3>
+                <p>Determining the shortest route for a walking tour of Old Montreal, starting and ending at Roddick Gates (McGill University) and including 12 tourist stops.</p>
+                <h3>Location-Allocation:</h3>
+                <p>Checking the evenness of CLSCs (free health clinics) in downtown Montreal. I determined which five of seven clinics could be closed to cut costs with minimal impacts on accessibility and then tested if a new clinic could be built at a better location.</p>
+                <h3>3-D Modelling:</h3>
+                <p>Geo-referencing an airphoto and building footprints of McGill Campus with street network data, creating a base map of the building footprint with building height values, and using interpolation to transform the 2D surface into a 3D model.</p>
+                <object width="600" height="750" style="border: 2px solid black;" data="resources/css/images/portfolio/labs/gis-labs.pdf"></object>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+        </div>
+
+        <h1>computer science</h1>
+        <div class="cs category">
+
+          <div class="title-and-project">
+            <p>coding challenges</p>
+            <div class="myBtn code project" data-modal="modal-code"></div>
+          </div>
+          <!-- Modal -->
+          <div id="modal-code" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="project-description">
+                <span class="close">&times;</span>
+                <h1>coding challenges</h1>
+                <p>The code for these assignments cannot be shared publicly.</p>
+                <h3>Web-search engine (Java)</h3>
+                <p>This mini-google program is written in Java and explores a portion of the web. The portion of the web is a subset of websites on McGill's Computer Science domain. The user types in a single-word query and the program returns the most relevant website and the website rank.
+                <br>How it works:
+                The program starts at a given url (http://www.cs.mcgill.ca/index.html) and does a traversal of the mini internet using breadth-first search. On each website, it parses the html content an updates a word index hashmap where the keys are words and the values are the list of urls that contain each word (String word, LinkedList urls). The program adds vertices and edges to a directed graph representing the internet (where vertices represent websites and edges represent ingoing and outgoing references). Once it has built the internet graph and created the word index, it uses a page ranking algorithm to analyze the structure of the graph and compute the page rank of each url:
+                <br><i>Page ranking algorithm where C(v) is the out-degree of vertex v and w1 ... wn are the vertices that have edges pointing toward v
+                <br>PR(v) = 0.5 + 0.5 * (PR(w1)/C(w1) + PR(w2)/C(w2) + ... + PR(wn)/C(wn);</i>
+                <br>Finally, the search engine uses the word index and page ranks to return the best url for the user's specific query (i.e. the highest ranking url that contains the query).
+                </p>
+                <h3>Spell-checker (Python)</h3>
+                <p> This program is written in python and captures the essence of automated spell correction. It takes a text file as input (i.e. an ebook) and computes the frequency of word-pairs in the text file by making a dictionary where the keys are word-pairs and the values are the number of times they appear in the text (i.e. key: str[(word1,word2)], value: frequency). When the user types a pair of words into the program, and if the first word is misspelled, the program uses the difflib.get_close_matches() function to compute ten alternative words that are closest to the first word. The program pairs the alternative words with the second word and returns the word-pair with the highest frequency in the dictionary.</p>
+                <!-- <img src="resources/css/images/portfolio/spell.png"> -->
+                <h3>Turn-based chat (C)</h3>
+                <p>This C program is a two-person text chat that uses plain-text I/O to communicate messages. Two terminals are open and in each terminal, a user runs the program with three arguments: incoming_file outgoing_file username.
+                <br>For example,
+                <br>Terminal 1: ./text_chat a.txt b.txt user1
+                <br>Terminal 2: ./text_chat b.txt a.txt user2
+                <br>To send messages, the user must be prompted with a "Send:". This prompt appears after a message has been received (and when the first terminal is opened). If a user types in a message, it is saved into the outgoing file as "[username] message".
+                <br><i>So if user1 types "hello", it is stored in b.txt as "[user1] hello".</i>
+                <br>To receive, the program repeatedly checks for new messages in the incoming file. If there is a message and it is different from the previous received message, it is printed in the terminal as "Received: [username] message".
+                <br><i>So when user2 receives the message above, the terminal prints "Received: [user1] hello".</i>
+                <br>The program continues by alternating send and receive until the chat is closed with ctrc-c or ctrl-d.
+                <img src="resources/css/images/portfolio/two-chats.png">
+                </p>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+
+          <div class="title-and-project">
+            <p>recycling robot</p>
+            <div class="myBtn robo project" data-modal="modal-robo"></div>
+          </div>
+          <!-- Modal -->
+          <div id="modal-robo" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="recycle project-description">
+                <span class="close">&times;</span>
+                <h1>mini projects - mcgill robotics</h1>
+                <p>Mini projects is a two-week robot-building competition hosted by McGill Robotics. My team decided to build a recycling robot in response to theme of building a "useful robot". We decided to focus on bottles (glass, paper, plastic, and aluminum) and considered sensors that could detect aluminum, length, transparency and weight. The robot had to include mechanical, electrical, and software components.</p>
+                <img src="resources/css/images/portfolio/robotics/design1.jpg">
+                <img src="resources/css/images/portfolio/robotics/design3.jpg">
+                <p>For the mechanical structure, we built a sturdy board out of foam with four cardboard boxes attached to it that would collect the four different kinds of bottles. We also attached three foam V-shaped ledges that would rotate left and right and tip the bottles into the boxes. Each V-shaped ledge was attached to a Servo motor that was wired to an Arduino. Due to time constraints, we decided to focus on weight detection and used a load cell to distinguish between weights and sort the bottles accordingly. We ran Arduino code from a computer to control the movement of the servos based on feedback from the load cell.</p>
+                <img src="resources/css/images/portfolio/robotics/build1.jpg">
+                <img src="resources/css/images/portfolio/robotics/build3.jpg">
+                <video width="320" height="240" controls>
+                  <source src="resources/css/images/portfolio/robotics/code.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="footerspace"></div>
+            </div>
+          </div>
+        </div>
+
+        <h1>urban systems</h1>
+        <div class="urban category">
+        <div class="title-and-project">
+          <p>essay on the smart city songdo</p>
+          <div class="myBtn songdo project" data-modal="modal-songdo"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-songdo" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">&times;</span>
+              <h1>smart city songdo</h1>
+              <p>Essay on the smart city Songdo</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="resources/css/images/portfolio/songdo/smart-city-songdo.pdf"></object>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+
+        <div class="title-and-project">
+          <p>mobile applications for urban agriculture</p>
+          <div class="myBtn mobile project" data-modal="modal-mobile"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-mobile" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">&times;</span>
+              <h1>mobile phones and urban agriculture</h1>
+              <p>Research paper on using mobile applications to promote urban agriculture in developed and developing areas.</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="resources/css/images/portfolio/phones/mobile-phones-and-urban-agriculture.pdf"></object>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+        </div>
+
+        <h1>graphic design</h1>
+        <div class="graphic category">
+
+        <div class="title-and-project">
+          <p>cultural landscape study on 820Plaza</p>
+          <div class="myBtn plaza project" data-modal="modal-plaza"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-plaza" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">&times;</span>
+              <h1>820plaza</h1>
+              <p>This is a cultural landscape study on a space in Montreal that I undertook for an architecture seminar. I chose to examine a multi-purpose space in Mile-Ex called 820Plaza, an old concrete garage that was turned into a cultural centre for art, music, and selling records and books. The booklet was made using Photoshop and consists of field descriptions, sketches, photographs, and information from interviews and articles. To capture the space from my perspective, I visited the site and neighborhood and included some of my own photographs and digital illustrations.</p>
+              <object width="600" height="750" style="border: 2px solid black;" data="resources/css/images/portfolio/plaza/820plaza.pdf"></object>
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+
+        <div class="title-and-project">
+          <p>adobe illustrations</p>
+          <div class="myBtn adobe project" data-modal="modal-adobe"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal-adobe" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="project-description">
+              <span class="close">&times;</span>
+              <h1>adobe illustrations and animations</h1>
+              <!-- <p>description</p> -->
+              <img src="resources/css/images/portfolio/adobe/sara.jpg">
+              <img src="resources/css/images/portfolio/adobe/friends.png">
+              <img src="resources/css/images/portfolio/adobe/house.png">
+              <img src="resources/css/images/portfolio/plaza/door.png">
+              <img src="resources/css/images/portfolio/plaza/houses.jpg">
+              <img src="resources/css/images/portfolio/plaza/street.jpg">
+              <img src="resources/css/images/portfolio/adobe/brain.gif">
+              <img src="resources/css/images/portfolio/adobe/centerfold.gif">
+            </div>
+            <div class="footerspace"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="contact-info">
+        <a>copyright © 2018. all rights reserved.</a>
+        <a href="https://www.linkedin.com/in/victoria-foing-835662116/">linkedin</a>
+        <a>contact: victoria.foing@mail.mcgill.ca</a>
+      </div>
+    </footer>
+    </div>
+    <script>
+    // Get the modal
+    var modal;
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    for (var i = 0; i < btn.length; i++) {
+      var thisBtn = btn[i];
+      thisBtn.addEventListener("click", function(){
+        modal = document.getElementById(this.dataset.modal);
+        modal.style.display = "block";
+        }, false);
+
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    for (var i = 0; i < span.length; i++) {
+      span[i].onclick = function() {
+      modal.style.display = "none";
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    </script>
+  </body>
+</html>

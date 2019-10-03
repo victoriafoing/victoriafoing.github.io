@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Victoria Foing</title>
+    <link href="./resources/css/style.css" style="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="mydiv">
+    <div class="bg"></div>
+    <header>
+      <div class="logo" style="margin-top: 50px">
+        <span>
+          VICTORIA FOING
+        </span>
+      </div>
+    </header>
+    <div class="logo">
+      <p style="text-align: left">EDUCATION
+        <br>
+        <br><span style="font-size: 15px">University of Amsterdam</span>
+        <br><span style="font-size: 15px">McGill University</span>
+        <br><span style="font-size: 15px">American School of the Hague</span>
+      </p>
+    </div>
+    <div class="logo">
+      <p style="text-align: left">PROFESSIONAL EXPERIENCE
+        <br>
+        <br><span style="font-size: 15px">Montreal Neurological Institute</span>
+        <br><span style="font-size: 15px">Nuance Communications</span>
+        <br><span style="font-size: 15px">European Space Agency</span>
+      </p>
+    </div>
+    <div class="logo"
+      <p style="text-align: left">PROJECTS<br></p>
+    </div>
+    <div class="logo"
+      <p style="text-align: left">SKILLS<br></p>
+    </div>
+    <div class="logo"
+    <p style="text-align: left">LANGUAGES
+      <br>
+      <br><span style="font-size: 15px">English</span>
+      <br><span style="font-size: 15px">German</span>
+    </p>
+    </div>
+    <div class="logo"
+      <p>PUBLICATIONS</p>
+    </div>
+
+    </div>
+    <script>
+    // Get the modal
+    var modal;
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    for (var i = 0; i < btn.length; i++) {
+      var thisBtn = btn[i];
+      thisBtn.addEventListener("click", function(){
+        modal = document.getElementById(this.dataset.modal);
+        modal.style.display = "block";
+        }, false);
+
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    for (var i = 0; i < span.length; i++) {
+      span[i].onclick = function() {
+      modal.style.display = "none";
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    </script>
+  </body>
+</html>
