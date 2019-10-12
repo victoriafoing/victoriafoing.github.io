@@ -60,7 +60,7 @@ header {
   width:60px;
   height:60px;
   color: lightgrey;
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
 }
 
 .section-link {
@@ -93,6 +93,15 @@ header {
 
 .visible {
   display: inline-block;
+}
+
+#clicked_title{
+  font-size: 30px;
+}
+
+#clicked_text {
+  font-size: 18px;
+  padding-top: 18px;
 }
 
 #clicked_media {
